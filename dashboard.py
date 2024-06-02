@@ -31,10 +31,10 @@ def status_users_counts(active_customers_df, non_active_customers_df):
     return active_customer_states, non_active_customer_states
 
 
-active_users_df = pd.read_csv("./active_customers.csv")
-non_active_users_df = pd.read_csv("./non_active_customers.csv")
-order_items_products_df = pd.read_csv("./order_items_products.csv")
-customers_df = pd.read_csv("./customers_dataset.csv")
+active_users_df = pd.read_csv("./data/active_customers.csv")
+non_active_users_df = pd.read_csv("./data/non_active_customers.csv")
+order_items_products_df = pd.read_csv("./data/order_items_products.csv")
+customers_df = pd.read_csv("./data/customers_dataset.csv")
 product_category_count = product_category_counts(order_items_products_df)
 product_category_price = product_category_prices(order_items_products_df)
 active_customer_states, non_active_customer_states = status_users_counts(
